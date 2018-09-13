@@ -216,8 +216,6 @@ public class FrmMinisterio extends javax.swing.JFrame {
                     ps.println(arqFinal.length);
                     s.nextLine();
                     IOFile.sendFile(servidor, arqFinal);
-                    String message =s.nextLine();
-                    System.out.println(message);
                     /*if (message.equals("true")) {
                         guias.setEnabledAt(1, true);
                         guias.setEnabledAt(0, false);
