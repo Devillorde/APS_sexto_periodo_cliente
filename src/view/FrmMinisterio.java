@@ -50,10 +50,16 @@ public class FrmMinisterio extends javax.swing.JFrame {
         pAccess = new javax.swing.JPanel();
         gAccess = new javax.swing.JTabbedPane();
         level1 = new javax.swing.JPanel();
+        grafico1 = new javax.swing.JLabel();
+        next1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         level2 = new javax.swing.JPanel();
+        grafico2 = new javax.swing.JLabel();
+        next2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         level3 = new javax.swing.JPanel();
+        grafico3 = new javax.swing.JLabel();
+        next3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -99,6 +105,15 @@ public class FrmMinisterio extends javax.swing.JFrame {
 
         guias.addTab("Login", pLogin);
 
+        grafico1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/Ranking-Agrotóxicos.jpg"))); // NOI18N
+
+        next1.setText("Próximo");
+        next1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                next1ActionPerformed(evt);
+            }
+        });
+
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/wooden texture.jpg"))); // NOI18N
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -107,16 +122,37 @@ public class FrmMinisterio extends javax.swing.JFrame {
         level1.setLayout(level1Layout);
         level1Layout.setHorizontalGroup(
             level1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1048, Short.MAX_VALUE)
+            .addGroup(level1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(grafico1))
+            .addGroup(level1Layout.createSequentialGroup()
+                .addGap(928, 928, 928)
+                .addComponent(next1))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1048, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         level1Layout.setVerticalGroup(
             level1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, level1Layout.createSequentialGroup()
-                .addGap(0, 4, Short.MAX_VALUE)
+            .addGroup(level1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(grafico1, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(level1Layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(next1))
+            .addGroup(level1Layout.createSequentialGroup()
+                .addGap(4, 4, 4)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         gAccess.addTab("Nível 1", level1);
+
+        grafico2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/atlas-proibidos-1024x435.jpg"))); // NOI18N
+
+        next2.setText("Proximo");
+        next2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                next2ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/wooden texture.jpg"))); // NOI18N
@@ -126,17 +162,34 @@ public class FrmMinisterio extends javax.swing.JFrame {
         level2Layout.setHorizontalGroup(
             level2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(level2Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1520, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addGap(20, 20, 20)
+                .addComponent(grafico2, javax.swing.GroupLayout.PREFERRED_SIZE, 1030, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(level2Layout.createSequentialGroup()
+                .addGap(840, 840, 840)
+                .addComponent(next2))
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1520, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         level2Layout.setVerticalGroup(
             level2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(level2Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addComponent(grafico2, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(level2Layout.createSequentialGroup()
+                .addGap(530, 530, 530)
+                .addComponent(next2))
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         gAccess.addTab("Nivel 2", level2);
+
+        grafico3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/iuhj.jpg"))); // NOI18N
+
+        next3.setText("Próximo");
+        next3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                next3ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/wooden texture.jpg"))); // NOI18N
@@ -145,13 +198,23 @@ public class FrmMinisterio extends javax.swing.JFrame {
         level3.setLayout(level3Layout);
         level3Layout.setHorizontalGroup(
             level3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1048, Short.MAX_VALUE)
+            .addGroup(level3Layout.createSequentialGroup()
+                .addGap(880, 880, 880)
+                .addComponent(next3))
+            .addGroup(level3Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(grafico3, javax.swing.GroupLayout.PREFERRED_SIZE, 840, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1048, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         level3Layout.setVerticalGroup(
             level3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(level3Layout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(140, 140, 140)
+                .addComponent(next3))
+            .addGroup(level3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(grafico3, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 595, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         gAccess.addTab("Nível 3", level3);
@@ -246,6 +309,62 @@ public class FrmMinisterio extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btFingerPrintActionPerformed
 
+    private void next1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next1ActionPerformed
+
+        if(index1==3){
+            index1=0;
+        }
+        index1++;
+        switch(index1){
+            case 1:
+                grafico1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/Ranking-Agrotóxicos.jpg")));
+                break;
+            case 2:
+                grafico1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/alimentos.jpg")));
+                break;
+            case 3:
+                grafico1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/agrotox.jpg")));
+                break;
+        }
+    }//GEN-LAST:event_next1ActionPerformed
+
+    private void next2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next2ActionPerformed
+
+        if(index2==2){
+            index2=0;
+        }
+        index2++;
+        switch(index2){
+            case 1:
+                grafico2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/atlas-proibidos-1024x435.jpg")));
+                break;
+            case 2:
+                grafico2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/brasil_agrotoxico.jpg")));
+                break;
+        }
+    }//GEN-LAST:event_next2ActionPerformed
+
+    private void next3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_next3ActionPerformed
+
+        if(index3==4){
+            index3=0;
+        }
+        index3++;
+        switch(index3){
+            case 1:
+                grafico3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/iuhj.jpg")));
+                break;
+            case 2:
+                grafico3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/apreensao1.jpg")));
+                break;
+            case 3:
+                grafico3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/apreensao2.jpg")));
+                break;
+            case 4:
+                grafico3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/grafics/apreensao3.jpg")));
+        }
+    }//GEN-LAST:event_next3ActionPerformed
+
     private boolean start() {
         String host = "127.0.0.1";
         int gate = 34197;
@@ -294,6 +413,9 @@ public class FrmMinisterio extends javax.swing.JFrame {
     private String fileName;
     private byte[] arqFinal;
     private javax.swing.JTabbedPane gAccess;
+    private javax.swing.JLabel grafico1;
+    private javax.swing.JLabel grafico2;
+    private javax.swing.JLabel grafico3;
     private javax.swing.JTabbedPane guias;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -303,13 +425,16 @@ public class FrmMinisterio extends javax.swing.JFrame {
     private javax.swing.JPanel level1;
     private javax.swing.JPanel level2;
     private javax.swing.JPanel level3;
+    private javax.swing.JButton next1;
+    private javax.swing.JButton next2;
+    private javax.swing.JButton next3;
     private javax.swing.JPanel pAccess;
     private javax.swing.JPanel pLogin;
     private javax.swing.JPanel panelIcon;
     // End of variables declaration//GEN-END:variables
     private java.net.Socket servidor;
     private int access;
-
+    private int index1=1,index2=1,index3=1;
     private void setIcon() {
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icons/mma_icon.jpg")));
     }
