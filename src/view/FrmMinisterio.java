@@ -216,9 +216,7 @@ public class FrmMinisterio extends javax.swing.JFrame {
                     ps.println(arqFinal.length);
                     s.nextLine();
                     IOFile.sendFile(servidor, arqFinal);
-                    System.out.println(s.nextLine());
-                    System.out.println("só printando mesmo");
-                    /*if (message.equals("true")) {
+                    if (s.nextLine().equals("true")) {
                         guias.setEnabledAt(1, true);
                         guias.setEnabledAt(0, false);
                         guias.setSelectedComponent(pAccess);
@@ -238,7 +236,7 @@ public class FrmMinisterio extends javax.swing.JFrame {
                         }
                     } else {
                         JOptionPane.showMessageDialog(this, "Digital não reconhecida!", "Erro de identificação", JOptionPane.ERROR_MESSAGE);
-                    }*/
+                    }
                 } catch (IOException ex) {
                     javax.swing.JOptionPane.showMessageDialog(this, "Erro ao se comunicar com o servidor");
                 }
