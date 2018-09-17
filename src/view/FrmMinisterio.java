@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package view;
 
 import arquivo.Arquivo;
@@ -366,8 +361,8 @@ public class FrmMinisterio extends javax.swing.JFrame {
     }//GEN-LAST:event_next3ActionPerformed
 
     private boolean start() {
-        String host = "127.0.0.1";
-        int gate = 34197;
+        String host;
+        int gate;
         JLabel lblMessage = new JLabel("Digite o endereço do servidor!");
         JTextField txtIP = new JTextField("127.0.0.1");
         JTextField txtPorta = new JTextField("34197");
